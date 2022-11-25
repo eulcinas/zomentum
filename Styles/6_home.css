@@ -1,0 +1,343 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+/* Hero text */
+.hero__text {
+  color: var(--white);
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.hero__text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Hero button */
+.hero__text-btn {
+  width: 150px;
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Hero image */
+.hero__image {
+  display: flex;
+}
+
+.hero__image img {
+  /* width: 50%; */
+  width: 100%;
+  mix-blend-mode: luminosity;
+}
+
+/* Greenish section */
+.hero-greenish-section {
+  background-color: var(--greenish);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-greenish-section h2 {
+  padding: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.frames {
+  display: flex;
+  flex-direction: column;
+}
+
+.frames__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.frames__items img {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.frames__items p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* White section */
+.white-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+/* .program__image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+} */
+
+.program__image-1 {
+  background: url(../images/Your-channel-program-on-steroids.svg);
+  width: 100%;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.program__image-2 {
+  background: url(../images/Become-the-vendor-everyone-wants-to-buy-from.svg);
+  width: 100%;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.program__image-3 {
+  background: url(../images/Its-like-having-Your-best-Salesman-on-autopilot.svg);
+  width: 100%;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.program__image-4 {
+  background: url(../images/Track-your-channel-performance.svg);
+  width: 100%;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.program__image-5 {
+  background: url(../images/Get-The-best-version-of-Your-sales-playbook.svg);
+  width: 100%;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.program__list-header {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.program__list-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.program__list-btn {
+  cursor: pointer;
+  background-color: var(--white);
+  border: none;
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* Hero section */
+  .hero__text h1 {
+    font-size: 3rem;
+    padding: 30px;
+  }
+
+  .hero__text p {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    line-height: 40px;
+  }
+
+  .hero__image {
+    justify-content: space-around;
+  }
+
+  .hero__image img {
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .hero-image-left {
+    display: initial;
+    width: 80%;
+    height: 15rem;
+  }
+
+  /* Greenish section */
+  .hero-greenish-section h2 {
+    padding: 30px;
+    font-size: 2.5rem;
+  }
+
+  .frames {
+    flex-direction: row;
+  }
+
+  .frames__items {
+    width: 33%;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .frames__items img {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .frames__items p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  /* White section */
+  .program {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .program-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .program__list {
+    width: 49%;
+    text-align: left;
+  }
+
+  .program__image {
+    width: 49%;
+  }
+
+  .program__list-header {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .program__list-text {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    position: relative;
+  }
+
+  .hero__text {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .hero__text h1 {
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .hero__text p {
+    width: 85%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .hero-image-left {
+    width: 25rem;
+    height: 15.5rem;
+    position: absolute;
+    bottom: -10px;
+    left: -50px;
+  }
+
+  .hero-image-right {
+    width: 25rem;
+    height: 15.5rem;
+    position: absolute;
+    bottom: 90px;
+    right: -100px;
+  }
+
+  /* Greenish section */
+  .hero-greenish-section {
+    padding-top: 30px;
+  }
+
+  .hero-greenish-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .frames {
+    margin-bottom: 6.25rem;
+  }
+
+  .frames__items p {
+    width: 70%;
+  }
+
+  /* White section */
+  .white-section-wrapper {
+    margin-top: 80px;
+  }
+
+  .program {
+    max-width: 1000px;
+    margin-bottom: 200px;
+    gap: 150px;
+  }
+
+  .program__image {
+    flex-basis: 50%;
+  }
+
+  .program__image-sm {
+    width: 80%;
+  }
+
+  .program-list {
+    flex-basis: 50%;
+  }
+
+  .program__list-sm {
+    width: 80%;
+  }
+
+  .program__img-resize {
+    flex-basis: 40%;
+  }
+}

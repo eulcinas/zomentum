@@ -1,0 +1,12 @@
+:root {
+  /* Colors */
+  --blue: #2f70fe;
+  --greenish: rgba(0, 255, 133, 0.08);
+  --black: #000000;
+  --white: #ffffff;
+  --white-grey: #e5e5e5;
+
+  /* Screen sizes */
+  --tablet: 768px;
+  --desktop: 1280px;
+}

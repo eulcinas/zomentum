@@ -1,0 +1,44 @@
+/* Layout */
+.container {
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero-blue-section {
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.hero-greenish-section {
+  width: 100%;
+  background-color: var(--greenish);
+}
+
+/* .program__image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+} */
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* Generic */
+.program__list {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

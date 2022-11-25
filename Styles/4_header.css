@@ -1,0 +1,157 @@
+/* Mobile first */
+.header-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  width: 80%;
+}
+
+/* toggler */
+.toggler {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toggler i {
+  font-size: 1.2rem;
+  padding: 4px 12px;
+  cursor: pointer;
+  color: var(--black);
+}
+
+/* navigation */
+.nav {
+  width: 100%;
+}
+
+.navigation {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.2em;
+}
+
+/* Buttons */
+.nav__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.nav__cta {
+  cursor: pointer;
+  width: 150px;
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.nav__login {
+  cursor: pointer;
+  width: 150px;
+  background-color: var(--white);
+  border-style: none;
+  font-size: 1.2rem;
+}
+
+.nav.hidden,
+.nav__buttons.hidden {
+  display: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .logo img {
+    width: 50%;
+  }
+
+  .toggler i {
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .toggler {
+    display: none;
+  }
+
+  .header-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .logo img {
+    width: 30%;
+  }
+
+  .nav.hidden,
+  .nav__buttons.hidden {
+    display: initial;
+  }
+
+  .nav {
+    width: 30%;
+  }
+
+  .navigation {
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    gap: 30px;
+  }
+
+  .navigation__item a {
+    font-size: 1rem;
+  }
+
+  .nav__buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .nav__cta {
+    width: 130px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .nav__login {
+    width: 100px;
+    font-size: 1rem;
+  }
+}
